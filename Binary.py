@@ -17,8 +17,10 @@ def is_valid_bit_sequence(bits, valid_set, memo={}):
 # Himpunan S yang diberikan
 S = {"00", "10", "010", "01001"}
 
-# Contoh penggunaan
-binary_input = "0100100100100101000"
+# Input biner
+binary_input = input("Masukkan deretan bit biner: ").strip()
+
+# Menjalankan validasi
 if is_valid_bit_sequence(binary_input, S):
     print("Bit valid")
 else:
