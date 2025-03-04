@@ -24,7 +24,7 @@ def is_valid_expression(expression):
         return False
     
     # Check for forbidden substrings
-    forbidden_substrings = ['(/', '-)', '//', '*/']
+    forbidden_substrings = ['(/', '-)', '//', '*/', '(*',]
     for substring in forbidden_substrings:
         if substring in expression:
             return False
